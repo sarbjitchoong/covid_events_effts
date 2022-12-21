@@ -1,1 +1,1 @@
-# covid_events_effts
+# covid_events_effets
