@@ -35,3 +35,7 @@ Since, it is hard to see if the lockdown actually had a positive or negative eff
 
 Assigned a cutoff predictor of 15/4/2020.
 <img src="./images/lagged.png" style="max-width: 300px"/>
+
+
+Added Polynomial Feature
+<img src="./images/lagged.png" style="max-width: 300px"/>
