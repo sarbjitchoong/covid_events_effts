@@ -18,7 +18,7 @@ The focus of our work is only on the daily Covid cases. We have also decided to 
 <br>1. Extracted all the indices that contained the relevant dates needed.
 <br>2. Assigned date as our independent variable (x) and daily cases as our dependent variable (y).
 <br>3. Plotted the data in a scatter plot.
-<br>4. Assigned a cutoff predictor as "Threshold".
+<br>4. Assigned a cutoff predictor.
 <br>5. Added a new column named "day" as cardinal numbers to make it easier to plot and perform a regression on.
 <br>6. Transformed the data and performed a Regression Discontinuity.
 <br>7. Plotted the Final Regression Discontinuity Model.
@@ -32,10 +32,13 @@ Just by looking at the dataset, we can say that people were already getting test
 
 Since, it is hard to see if the lockdown actually had a positive or negative effect. We have decided to lag the data by 3 weeks to see more visible changes given that more data is provided on the second quarter.
 
-
-Assigned a cutoff predictor of 15/4/2020.
+### Visualization from March 16, 2020 to May 15,2020.
 <img src="./images/lagged.png" style="max-width: 300px"/>
 
+Assigned a cutoff predictor of April 15, 2020.
+<br>Added Polynomial Feature
+<img src="./images/final.png" style="max-width: 300px"/>
 
-Added Polynomial Feature
-<img src="./images/lagged.png" style="max-width: 300px"/>
+
+## ⭐ Conclusion
+Given the lag date of April 15, 2020, we can conclude that the lockdown has decreased the cases of Covid reported daily in Quebec. By looking at the summary we can see that there is statiscal significance with the day and the intercept having Pvalues lower than 0.05. 
