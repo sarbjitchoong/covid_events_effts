@@ -1,10 +1,12 @@
-## 🔸 March 20, 2020 Lockdown 🔸
-#### Regression Discontinuity Design
-
+## 🔸 Regression Discontinuity Design - COVID 🔸
 
 ## 🏆 Goal
 
-To use RDD to estimate the effect of the the 20/3/2020 lockdown in Quebec.
+Goal is to use RDD to estimate the effect of the following events in Quebec:
+
+1. The 20/3/2020 lockdown
+2. The reopening of schools on 31/8/2020
+3. The 25/12/2020 lockdown.
 
 ## 📈 Data Source:
 https://github.com/ccodwg/CovidTimelineCanada/tree/main/data/pt
@@ -24,21 +26,18 @@ The focus of our work is only on the daily Covid cases. We have also decided to 
 <br>7. Plotted the Final Regression Discontinuity Model.
 
 
-## 📊 Data Visualization
-### Daily Covid Cases
-<img src="./images/dataviz.png" style="max-width: 300px"/>
+## 📊 Results
 
-Just by looking at the dataset, we can say that people were already getting tested for Covid however, we can not conclude any result of the tests. For the first quarter of the year there were no records of daily cases.
+### RDD March Lockdown.
+![111](https://user-images.githubusercontent.com/39967400/210910200-12f871d3-aa4d-4d06-843f-353731c57644.png)
 
-Since, it is hard to see if the lockdown actually had a positive or negative effect. We have decided to lag the data by 3 weeks to see more visible changes given that more data is provided on the second quarter.
+### RDD August Reopening
+![image](https://user-images.githubusercontent.com/39967400/211121742-dbb911bc-45b1-4809-864a-c5846dd028be.png)
 
-### Visualization from March 16, 2020 to May 15,2020.
-<img src="./images/lagged.png" style="max-width: 300px"/>
+### RDD December Lockdown
+![333](https://user-images.githubusercontent.com/39967400/210910344-6114f9d9-c1f6-4540-bfd1-3c15ed9cc731.png)
 
-Assigned a cutoff predictor of April 15, 2020.
-<br>Added Polynomial Feature
-<img src="./images/final.png" style="max-width: 300px"/>
 
 
 ## ⭐ Conclusion
-Given the lag date of April 15, 2020, we can conclude that the lockdown has decreased the cases of Covid reported daily in Quebec. By looking at the summary we can see that there is statiscal significance with the day and the intercept having Pvalues lower than 0.05. 
+Our results show that both March and December lockdowns decreased the number of covid daily cases and August reopening increased the number of daily covid cases. We verified our models statistically with the significance of the cut off dates. 
